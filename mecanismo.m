@@ -10,7 +10,7 @@ for teta2=0:0.1:4*pi;  %fazendo teta 2 variar de 0 a 4 pi( manivela gira 2 vezes
     
     l3=sqrt(l1^2+l2^2+2*l1*l2*sin(teta2));  %comprimento do elo 3
     teta3=acos((l2*cos(teta2))/l3);         % formula para teta3
-    teta5=asin(-1*(l4*sin(teta3)-a)/l5)     % formula para teta 5
+    teta5=asin(-1*(l4*sin(teta3)-a)/l5);    % formula para teta 5
     l6=l4*cos(teta3)-l5*cos(teta5);         % comprimento do elo 6
     
     plot([0 l2*cos(teta2)],[l1 l1+l2*sin(teta2)],'o-','linewidth',2);hold on; % para plotar a manivela
